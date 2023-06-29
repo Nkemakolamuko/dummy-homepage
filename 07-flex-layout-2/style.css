@@ -99,8 +99,8 @@ body {
 
 .header {
   height: 72px;
-  background: darkmagenta;
-  color: white;
+  background: white;
+  color: darkmagenta;
   text-align: left;
   display: flex;
   align-items: center;
@@ -211,6 +211,11 @@ li {
   background-color: aqua;
   width: 40px;
   height: 25px;
+}
+
+img {
+  width: 50px;
+  height: 30px;
 }
 
 /* Add media queries for adjustment abilities */
