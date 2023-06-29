@@ -94,6 +94,7 @@ body {
   min-height: 100vh;
   display: flex; /* frm solu */
   flex-direction: column; /* from solu */
+  background-color: deeppink;
 }
 
 .header {
@@ -141,9 +142,9 @@ li {
 }
 
 .sidebar ul li a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #eee;
-  line-height: 1vw; /* Adjust the line-height to push tye text up */
+  line-height: 2vw; /* Adjust the line-height to push tye text up */
   padding-left: 8px; /* Add left padding for the sidebar links */
   display: block; /* Add display: block to make the links fill the entire width */
   margin: 0px; /* remove any default margin */
@@ -161,6 +162,14 @@ li {
   font-size: 12px; /* Add the desired font size for the individual cards */
   padding: 8px; /* Add padding to the content of the card */
   box-sizing: border-box; /* Include padding in the card's dimensions */
+  transition: transform 0.1s;
+  background-color: white;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  background-color: aqua;
+  color: black;
 }
 
 /* .card:nth-child(3n + 1) { */
@@ -178,6 +187,30 @@ li {
 .cards {
   display: flex;/* by creating this new div and putting ythose cards inside makes the card wrap ;; tears */
   flex-wrap: wrap; /* from solution */ 
+}
+
+
+.card > p > a {
+  text-decoration: none;
+  cursor: -moz-zoom-out;
+}
+
+/* CSS for the floating button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  text-align: center; /*  to center the text horizontally within the button. */
+  line-height: 20px; /* to vertically center the text within the button. */
+  border: 1px solid rgba(93, 92, 92, 0.538);
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  background-color: aqua;
+  width: 40px;
+  height: 25px;
 }
 
 /* Add media queries for adjustment abilities */
