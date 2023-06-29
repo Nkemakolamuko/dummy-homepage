@@ -98,6 +98,10 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
   height: 72px;
   background: white;
   color: darkmagenta;
@@ -106,6 +110,7 @@ body {
   align-items: center;
   padding-left: 8px;
   font-weight: 900;
+
 }
 
 .footer {
@@ -182,6 +187,7 @@ li {
   /* display: flex; */
   /* flex-wrap: wrap; */
   flex: 1;
+  margin-top: 72px;
 }
 
 .cards {
